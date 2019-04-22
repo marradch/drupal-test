@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function my_module_theme($existing, $type, $theme, $path) {
+	return [
+		'custom-request-block-theme'     => [
+			'variables' => array('title' => NULL, 'description' => NULL),
+		],
+		'test_custom_request_form'     => [
+			'render element'  => 'form'
+		],
+		'custom-request-list-theme'     => [
+			'variables' => array('items' => [], 'path' => NULL, 'pager' => NULL),
+		],
+	];
+}

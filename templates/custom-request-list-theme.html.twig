@@ -1,0 +1,25 @@
+<div>
+    <h1>Requests</h1>    
+</div>
+<div>
+<table>
+
+<th>Full name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>City</th>
+<th>Created</th>
+{% for item in items %}
+<tr>
+	<td>{{item.full_name}}  </td> 
+	<td>{{item.email}}  </td> 
+	<td>{{item.phone}}  </td> 
+	<td>{{item.city}}  </td>  
+	<td>{{item.created}}</td> 
+</tr> 	
+{% endfor %}
+</table>
+</div>
+<div>
+{{pager}}
+</div>

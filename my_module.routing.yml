@@ -1,0 +1,7 @@
+my_module.admin_content:
+  path: '/admin/content/requests' 
+  defaults: 
+    _controller: '\Drupal\my_module\Controller\AdminController::customRequestList' 
+    _title: 'Custom request list'
+  requirements: 
+    _permission: 'watch requests list'

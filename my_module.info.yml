@@ -1,0 +1,4 @@
+name: 'Test task'
+description: 'Test task for request'
+core: 8.x
+type: module
